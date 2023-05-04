@@ -49,22 +49,20 @@ function Chat() {
 	}, []);
 
 	return (
-		<div>
+		<div class="container">
 			<h1>Chatbot</h1>
 			<ChatHistory history={history} isLoading={isLoading} />
 			{isLoading && <div>Loading...</div>}
-			<form>
-				<label>
-					<input type="text" ref={inputRef} />
-					<button
-						onClick={handleButtonClick}
-						disabled={isLoading}
-						className={isLoading ? 'disabled-button' : ''}
-					>
-						Send
-					</button>
-				</label>
-			</form>
+			<div class="input-container">
+				<input type="text" class="message-input" placeholder="Type a message..." ref={inputRef} />
+				<button
+					onClick={handleButtonClick}
+					disabled={isLoading}
+					className={`send-button ${isLoading ? 'disabled-button' : ''}`}
+				>
+					Send
+				</button>
+			</div>
 		</div>
 	);
 }

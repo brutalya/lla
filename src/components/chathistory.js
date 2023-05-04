@@ -4,10 +4,11 @@ import './styles/ChatHistory.css';
 function ChatHistory(props) {
 	console.log(props);
 	return (
-		<div>
+		<div class="messages">
 			{props.history.map((message, index) => (
 				<div key={index} className={`message ${message.sender}`}>
 					<p>{message.text}</p>
+					<span class="time">9:15 AM</span>
 				</div>
 			))}
 		</div>

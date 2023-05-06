@@ -54,7 +54,12 @@ function Chat() {
 			<ChatHistory history={history} isLoading={isLoading} />
 			{isLoading && <div>Loading...</div>}
 			<div class="input-container">
-				<input type="text" class="message-input" placeholder="Type a message..." ref={inputRef} />
+				<input
+					type="text"
+					class="message-input"
+					placeholder="Type a message..."
+					ref={inputRef}
+				/>
 				<button
 					onClick={handleButtonClick}
 					disabled={isLoading}

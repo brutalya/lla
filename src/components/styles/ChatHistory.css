@@ -1,57 +1,53 @@
-
-
 .messages {
-  padding: 20px;
-  overflow: auto;
+	padding: 20px;
+	overflow: auto;
 }
 
 .message {
-    min-width: 57px;
-    max-width: 75%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    position: relative;
-    clear: both;
+	min-width: 57px;
+	max-width: 75%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 20px;
+	position: relative;
+	clear: both;
 }
 
 .message p {
-    margin: 0;
+	margin: 0;
 }
-  
-  .message.user {
-    background-color: #0B93F6;
-    align-self: flex-end;
-    float: right;
-    color: #FFF;
-  }
-  
-  .message.bot {
-    background-color: #E5E5EA;
-    align-self: flex-start;
-    float: left;
-  }
 
-  .message .text {
-    color: #555;
-    font-size: 16px;
-    line-height: 1.4;
-    margin: 0;
-  }
+.message.user {
+	background-color: #0b93f6;
+	align-self: flex-end;
+	float: right;
+	color: #fff;
+}
 
+.message.bot {
+	background-color: #e5e5ea;
+	align-self: flex-start;
+	float: left;
+}
+
+.message .text {
+	color: #555;
+	font-size: 16px;
+	line-height: 1.4;
+	margin: 0;
+}
 
 .time {
-    font-size: 0.8em;
-    position: absolute;
-    bottom: -20px;
+	font-size: 0.8em;
+	position: absolute;
+	bottom: -20px;
 }
 
 .message.bot .time {
-    left: 10px;
+	left: 10px;
 }
 
 .message.user .time {
-    right: 10px;
-    color: #555;
+	right: 10px;
+	color: #555;
 }
-  
